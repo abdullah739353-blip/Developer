@@ -1,0 +1,6 @@
+{
+  "name": "LUX Salon UK",
+  "description": "A premium luxury hair and beauty salon website in Birmingham, UK, featuring an elegant modern design, service catalog, interactive booking flow, image gallery, and testimonials.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+
+  --color-luxury-black: #111111;
+  --color-luxury-charcoal: #222222;
+  --color-luxury-gold: #c8a96a;
+  --color-luxury-gold-light: #dec48b;
+  --color-luxury-gold-dark: #ab8b4e;
+  --color-luxury-beige: #faf7f2;
+  --color-luxury-ivory: #f9f5f0;
+}
+
+/* Base custom resets and custom scrollbars */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #ffffff;
+    color: #222222;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: rgba(200, 169, 106, 0.2);
+    color: #111111;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #faf7f2;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #c8a96a;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ab8b4e;
+  }
+}
+
+/* Custom premium visual utility classes */
+.gold-glow {
+  box-shadow: 0 0 20px rgba(200, 169, 106, 0.15);
+}
+
+.gold-glow-hover:hover {
+  box-shadow: 0 0 25px rgba(200, 169, 106, 0.35);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #c8a96a 0%, #dec48b 50%, #ab8b4e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #c8a96a 0%, #dec48b 50%, #ab8b4e 100%);
+}
+
+.bg-dark-gradient {
+  background: linear-gradient(135deg, #111111 0%, #222222 100%);
+}
+
+.glass-morphism {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(200, 169, 106, 0.12);
+}
+
+.glass-morphism-dark {
+  background: rgba(17, 17, 17, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(200, 169, 106, 0.15);
+}
+
+/* Custom Hide Scrollbar Utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
